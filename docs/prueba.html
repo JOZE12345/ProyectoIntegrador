@@ -14,11 +14,36 @@
     <meta property="og:description" content="Vali is a responsive and free dashboard theme/template built with Bootstrap 5, SASS and PUG.js.">
     <title>Vali Admin - Free Bootstrap 5 Dashboard Template</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
   <body class="landing-page">    
     <h1>Curso integrador</h1>
     <h2>Curso integrador</h2>
     <h3>DIANITA LA MEJOR LIDER</h3>
     <h4>LA MISS ES LA MEJOR :3</h4>
+    <title>Iniciar sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 50px auto;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+      <form action="procesar_login.php" method="post">
+          <label for="username">Nombre de usuario:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+
+          <input type="submit" value="Iniciar sesión">
+      </form>
   </body>
 </html>
