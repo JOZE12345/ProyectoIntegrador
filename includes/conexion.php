@@ -1,0 +1,17 @@
+<?php
+ $host = 'localhost';
+ $user =  'root' ; 
+ $db = 'sistema_matricula';
+$pass = '' ;
+try {
+    $pdo = new PDO('mysql:host='.$host.';dbname='.$db.';charset=utf8',$user,$pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+} catch (Exception $e) {
+    echo 'Error de conexion: '.$e->getMessage();
+}
+$conn = new mysqli($host, $user, $pass, $db);
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+?>
